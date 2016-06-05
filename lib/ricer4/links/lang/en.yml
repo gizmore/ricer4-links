@@ -1,0 +1,25 @@
+en:
+  ricer4:
+    plugins:
+      links:
+        
+        display_show_item: "[%{id}]%{title} – %{url}"
+        display_list_item: "[%{number}]%{url}"
+        
+        links:
+          trigger: "link"
+        
+        list:
+          trigger: "link.list"
+          
+        search:
+          trigger: "link.search"
+          
+        show:
+          trigger: "link.show"
+          
+        vote_down:
+          trigger: "link.dislike"
+
+        vote_up:
+          trigger: "link.like"
