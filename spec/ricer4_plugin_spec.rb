@@ -33,8 +33,10 @@ describe Ricer4::Plugins::Links do
     expect(LINKS.count).to eq(3)
     bot.exec_line("http://pooltool.gizmore.org/tpl/pt/img/banner.gif?b")
     expect(LINKS.count).to eq(3)
-    
-    
+  end
+
+  it("can search and vote links") do
+    bot.exec_line_for("Links/VoteUp", "1")
   end
   
 end
